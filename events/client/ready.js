@@ -1,9 +1,6 @@
 module.exports = client => {
   let botStatus = [
-    `${client.guilds.cache.size} servers!`,
-    "!help or !h",
-    `Over ${client.users.cache.size} users!`,
-    `Over ${client.channels.cache.size} channels!`
+    `CharmingSquad Server!`,
 ]
 
     setInterval(function() {
@@ -12,8 +9,8 @@ module.exports = client => {
 
     }, 5000)
 
-    client.user.setUsername('<bot name>'); // sets the bots name
-    client.user.setStatus("online"); // sets the bots status
+    client.user.setUsername('Charming Utilities'); // sets the bots name
+    client.user.setStatus("dnd"); // sets the bots status
     
   console.log(`Hello ${client.user.username} is now online!`); // consoles logs this when bot is turned on
    
